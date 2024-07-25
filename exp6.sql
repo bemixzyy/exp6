@@ -135,5 +135,5 @@ GROUP BY ProductName;
 -- tổng tiền của từng đơn
 SELECT OrderID, SUM(Price * Quantity) AS Revenue
 FROM Orders
-JOIN ProductID ON OrderID = ProductID
+JOIN Products ON OrderID = ProductID
 GROUP BY OrderID;
